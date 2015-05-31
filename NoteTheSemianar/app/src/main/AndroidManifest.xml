@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.tevitol.incnet.notethesemianar" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".TabBar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="org.tevitol.incnet.TabBar"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".details"
+            android:label="@string/title_activity_details"
+            android:parentActivityName=".TabBar" >
+            <intent-filter>
+                <action android:name="org.tevitol.incnet.notethesemianar.details" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.tevitol.incnet.notethesemianar.TabBar" />
+        </activity>
+
+
+
+
+        <activity
+            android:name=".createNewEvent"
+            android:label="@string/title_activity_create_new_event"
+            android:parentActivityName=".TabBar" >
+            <intent-filter>
+                <action android:name="org.tevitol.incnet.createNewEvent"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.tevitol.incnet.notethesemianar.TabBar" />
+        </activity>
+        <activity android:name=".upcomingTab"
+            android:label="upcomingTab"
+            />
+        <activity android:name=".liveTab"
+            android:label="liveTab"
+            />
+        <activity android:name=".pastTab"
+            android:label="pastTab"
+            />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".Login" >
+            <intent-filter>
+                <action android:name="org.tevitol.incnet.notethesemianar.Register"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.tevitol.incnet.notethesemianar.Login" />
+        </activity>
+        <activity
+            android:name=".comments"
+            android:label="@string/title_activity_comments"
+            android:parentActivityName=".details" >
+            <intent-filter>
+                <action android:name="org.tevitol.incnet.notethesemianar.comments"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.tevitol.incnet.notethesemianar.details" />
+        </activity>
+        <activity
+            android:name=".viewComment"
+            android:label="@string/title_activity_view_comment"
+            android:parentActivityName=".comments" >
+            <intent-filter>
+                <action android:name="org.tevitol.incnet.notethesemianar.viewComment"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.tevitol.incnet.notethesemianar.comments" />
+        </activity>
+        <activity
+            android:name=".addComment"
+            android:label="@string/title_activity_add_comment"
+            android:parentActivityName=".comments" >
+            <intent-filter>
+                <action android:name="org.tevitol.incnet.notethesemianar.addComment"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.tevitol.incnet.notethesemianar.comments" />
+        </activity>
+    </application>
+
+</manifest>

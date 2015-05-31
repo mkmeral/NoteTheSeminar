@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Note The Seminar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_details">details</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="details">Details</string>
+    <string name="twoDots">:</string>
+    <string name="presenter">Presenter</string>
+    <string name="title_activity_create_new_event">createNewEvent</string>
+    <string name="title">Title</string>
+    <string name="location">Location</string>
+    <string name="create_event">Create The Seminar</string>
+    <string name="title_activity_login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_comments">comments</string>
+    <string name="title_activity_view_comment">viewComment</string>
+    <string name="title_activity_add_comment">addComment</string>
+    <string name="note">And Your Note Goes .... Here</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="or">or</string>
+    <string name="past">Past</string>
+    <string name="live">Live</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="addComment">new Note</string>
+    <string name="addEvent">+ Event</string>
+    <string name="subtopics">Enter your subtopics with comma between them.</string>
+
+</resources>
